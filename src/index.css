@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(197, 197, 197);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 250px;
+    height: 370px;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(1, 1, 1, 0.8);
+}
+
+.display {
+    width: 100%;
+    text-align: right;
+    background-color: darkkhaki;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    height: 50px;
+    border: 5px solid rgb(34, 33, 33);
+    position: relative;
+    margin-top: 5px;
+}
+
+/* .display small {
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+} */
+
+.nums-container {
+    width: 75%;
+}
+
+.ops-container {
+    width: 25%;
+}
+
+button {
+    font-size: 25px;
+    border-radius: 25%;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(63, 63, 63);
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.big-h {
+    width: 110px;
+    border-radius: 10px;
+}
+
+button.orange {
+    background-color: tomato;
+    color: white;
+}
+
+button.darkgray {
+    background-color: rgb(85, 83, 83);
+}
+
+button.lightgray {
+    background-color: rgb(168, 166, 166);
+    color: black;
+}
+
+.ac {
+    margin-right: 25%;
+}
